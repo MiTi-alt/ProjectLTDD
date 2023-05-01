@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="@drawable/background_intro"
+tools:context=".Activity.IntroActivity"
+android:layout_height="match_parent">
+
+<TextView
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign in"
+    android:textColor="@color/white"
+    android:textSize="35dp"
+    android:textStyle="bold"
+    android:id="@+id/signin"
+    android:layout_margin="50dp">
+
+</TextView>
+
+<EditText
+    android:id="@+id/lgusername"
+    android:layout_below="@+id/signin"
+    android:layout_width="match_parent"
+    android:hint="Email"
+    android:textColor="@color/white"
+    android:textColorHint="@color/white"
+    android:layout_margin="10dp"
+    android:padding="20dp"
+    android:background="#30ffffff"
+    android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+    android:layout_height="wrap_content">
+
+</EditText>
+
+    <EditText
+        android:id="@+id/lgpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lgusername"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_info"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white">
+
+    </EditText>
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/signInbtn"
+    android:text="SIGN IN"
+    android:layout_below="@+id/lgpass"
+    android:textSize="25dp"
+    android:layout_centerHorizontal="true"
+    android:background="@color/design_default_color_secondary"
+    android:layout_margin="20dp">
+
+</com.google.android.material.button.MaterialButton>
+<TextView
+    android:text="Do not have an account?"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/signInbtn"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/white"
+    android:id="@+id/lgForgotPass">
+
+</TextView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signInRGT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lgForgotPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/design_default_color_secondary"
+        android:text="REGISTER"
+        android:textSize="14dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+<TextView
+    android:text="or sign up with"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/socialicons"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/info">
+
+</TextView>
+
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/socialicons"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/googleLG"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/google">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/fb">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/twitter">
+
+    </ImageView>
+</LinearLayout>
+
+
+</RelativeLayout>
